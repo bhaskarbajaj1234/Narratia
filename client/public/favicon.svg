@@ -1,0 +1,53 @@
+<!-- favicon replaced with logo1.svg to keep branding consistent -->
+<!-- Source: client/src/assets/logo1.svg -->
+<!--
+	Note: using the full wordmark SVG as the favicon. Modern browsers support SVG favicons, but you may prefer a simplified/mark-only ICO or PNG for best compatibility.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260" role="img" aria-labelledby="title desc">
+	<title id="title">NARRATIA logo</title>
+	<desc id="desc">A modern logo with a speech-bubble quill mark and the word NARRATIA</desc>
+
+	<defs>
+		<linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+			<stop offset="0" stop-color="var(--accent1,#6C5CE7)"/>
+			<stop offset="1" stop-color="var(--accent2,#00B894)"/>
+		</linearGradient>
+		<filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+			<feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.15"/>
+		</filter>
+		<style>
+			:root{ --primary:#0F172A; --muted:#667085; --accent1:#6C5CE7; --accent2:#00B894 }
+			.mark{ fill: url(#g1); }
+			.bubble-outline{ fill: none; stroke: rgba(255,255,255,0.14); stroke-width:6 }
+			.quill{ fill: white; opacity:0.98 }
+			.title{ font-family: 'Poppins', 'Segoe UI', Roboto, Arial, sans-serif; font-weight:700; font-size:84px; fill:var(--primary) }
+			.subtitle{ font-family: 'Poppins', 'Segoe UI', Roboto, Arial, sans-serif; font-weight:500; font-size:28px; fill:var(--muted) }
+		</style>
+	</defs>
+
+	<!-- background (transparent) -->
+
+	<!-- circular speech-bubble mark with quill -->
+	<g transform="translate(60,40)" filter="url(#softShadow)">
+		<!-- bubble -->
+		<path class="mark" d="M120 0C186.274 0 240 53.726 240 120c0 20.972-5.008 40.664-13.838 57.612L236 210l-32.6-15.5C183.786 206.43 153.34 216 120 216 53.726 216 0 162.274 0 96S53.726 0 120 0z" />
+		<!-- subtle outline -->
+		<path class="bubble-outline" d="M120 4C184.612 4 236 55.388 236 120c0 19.792-4.692 38.308-13.03 54.22L236 206l-31.4-14.95C183.42 206.74 152.06 214 120 214 55.388 214 4 162.612 4 98S55.388 4 120 4z" opacity="0.18"/>
+
+		<!-- quill icon (stylized) -->
+		<path class="quill" d="M80 38c24-18 68-26 98 6 8 8 6 22-2 38-12 24-34 52-62 68-6 4-14 6-20 2-6-4-8-12-4-20 8-18 36-44 52-60 8-8 6-18-2-24-10-8-36-6-58 8-6 4-16 2-20-6-4-8-2-18 6-24 14-10 34-16 50-12z" transform="translate(40,28) scale(0.9)"/>
+
+		<!-- small white highlight -->
+		<ellipse cx="180" cy="38" rx="28" ry="12" fill="rgba(255,255,255,0.12)" />
+	</g>
+
+	<!-- Wordmark -->
+	<g transform="translate(300,140)">
+		<text class="title">NARRATIA</text>
+		<text class="subtitle" transform="translate(0,44)">Stories • Conversations</text>
+	</g>
+
+	<!-- Accessible fallback rect (hidden from visual) -->
+	<rect x="0" y="0" width="800" height="260" fill="none" aria-hidden="true" />
+
+</svg>
