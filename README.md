@@ -36,5 +36,5 @@ npm run dev   # or your configured start command
 
 Your app should now be accessible (e.g. at http://localhost:3000 — depending on your configuration).
 
-Contact / Author
+Contact / Author <br>
 Created and maintained by bhaskarbajaj1234. Feel free to open issues or submit pull requests.
